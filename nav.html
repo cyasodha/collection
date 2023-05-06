@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+   <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        outline: 0px;
+    }
+    .ams{
+        width: 100%;
+    }
+    .nav{
+        display: flex;
+        width: 100%;
+        height: 17vh;
+        border: 2px solid burlywood;
+        justify-content: space-around;
+        align-items: center;
+        background-color:burlywood;
+        position: fixed; 
+        z-index: 10;
+    }
+    .nav div i{
+        color:red;
+        font-size: 30px;
+    }
+    
+    .con{
+      width: 50%;
+      height: 100%;
+       
+        
+     }
+     .menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 40px;
+        font-size: 25px;
+     }
+     .id{
+        display: flex;
+        width: 10%;
+        align-items: center;
+        justify-content: space-around;
+     }
+     .menu a{
+        color: black;
+        text-decoration: none;
+     }
+    .nav div b{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 30px;
+    }
+    a:hover{
+        color: blueviolet;
+        text-decoration:underline 2px solid blueviolet;
+
+    }
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: url(slider_tncorner.png);
+        background-size: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        position: relative;
+
+       
+    }
+    .banner div h1{
+        font-size: 100px;
+        color: white;
+        position: absolute;
+        left: 30px;
+    }
+    .banner div button{
+        border: 2px solid white;
+        width: 10%;
+        height:50px;
+        color: black;
+        background-color: red;
+        font-size: 20px;
+        border-radius: 5px;
+        position: absolute;
+        top:65vh;
+        left:17%;
+    }
+    h1{
+        color:black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    p{
+        color:red;
+    }
+    .pic{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid;
+        
+    }
+     .pic div{ 
+        width:16% ;
+        height: 85%;
+        border: 2px solid red;
+        border-radius: 5px;
+        background-color: brown;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    
+     }
+     .pic2{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid white; 
+        align-items: center;
+    }
+     .pic2 div{ 
+        width:16% ;
+        height: 85%;
+        border: 1px solid green;
+        background-color:white;
+        font-size: 30px;
+        color:black;
+        padding: 8px;
+        font-weight: 900;
+        align-items: center;
+       
+     }
+
+     .pic2 button{
+        background-color:brown;
+        width: 80px;
+        height: 30px;
+        color: white;
+        font-weight: 200;
+        border-radius: 10px;
+        }
+    .view{
+        display: flex;
+        justify-content: center;
+    }
+    .view2{
+        border: 2px solid ;
+        background-color: brown;
+        color: white;
+        border-radius: 7px;
+        width: 150px;
+        height:30px;
+        text-align: center;
+        padding-top: 7px;
+        font-weight: 700;
+        font-size: 20px;
+       
+    }
+    .whatsapp{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+         
+    }
+    .whats{
+        border: 2px dotted greenyellow;
+        width: 80%;
+        height:40vh;
+        margin-top: 50px;
+        display: flex;
+        align-items: normal;
+        border-radius: 5px;
+    }
+    .contact{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .us{
+        font-weight: 500;
+        font-size: 30px;
+        font-family: fantasy;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .info{
+        word-spacing: 5px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .contact button{
+        background-color: rgb(14, 195, 44);
+        width: 160px;
+        height: 30px;
+        color: white;
+        align-self: flex-end;
+        margin-top: 80px;
+        margin-right: 50px;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    .login{
+        display: flex;
+        justify-content:center;
+        margin-bottom: 30px;
+    }
+    .login1{
+        width: 100%;
+        height: 60vh;
+        border: 1px solid blue;
+        background: url(360_F_110626357_7K92hEJRtIg5lHjjpIoa0rju1Ijbybjv.jpg);
+        background-size: cover;
+        display: flex;
+
+    }
+    .login2{
+        width: 40%;
+        height: 100%;
+        justify-content: center;
+    }
+    .login3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 60%;
+        height: 100%;
+        
+        
+
+    }
+    .send{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 150px;
+        color: white;
+    }
+    .query{
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        display: flex;
+        margin-left: 50px;
+
+    }
+    .query p{
+        color: orange;
+    }
+    button{
+        width: 80px;
+        height: 30px;
+        border-radius: 7px;
+        background-color: brown;
+        color: white;
+    }
+    input[type=text]{
+        width: 70%;
+        height: 50px;
+    }
+    .home{
+        position: relative;
+    }
+    .file{
+        display:none;
+        position: absolute;
+        top:20px;
+        width: 100%;
+    }
+    .smenu{
+        display: none;
+    }
+    .ssmenu{
+                display: none;
+                width: 150px;
+                height: 30vh;
+                flex-direction: column;
+                align-items: center;
+               text-align: center;
+                justify-content: space-around;
+                background-color: burlywood;
+                padding: 5px 0px;
+                font-size: 14px;
+                position: absolute;
+                top: 20px;
+    }
+    @media screen and (max-width:700px) {
+         
+         .menu{
+             display: none;
+         }
+         .smenu{
+             display: block;
+         }
+         .dog{
+           position: relative;
+           right:220px;
+           top:80px;
+        display:inline ;
+            z-index: 10;
+         }
+         .dog:hover .ssmenu{
+             display: flex;
+         }
+         .banner div h1{
+            font-size: 70px;
+            position:relative ;
+            top: 60px;
+            left: -40px;
+         }
+         .banner div button{
+            width: 120px;
+            font-size: 15px;
+         }
+         .space{
+           
+            width:100% ;
+            height:170vh;
+            position: absolute;
+            bottom:-170vh;
+           
+
+         }
+         .pic{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 10px;
+         }
+     }
+
+
+    
+   </style>
+</head>
+<body>
+    <div class="ams">
+    <div class="nav">
+        <div class="logo"><i class="fa-solid fa-gem"></i><b>AMS Minerals</b></div>
+        <div class="con">
+        <div class="menu">
+            <a href="#">home</a>
+            <a href="#">collection</a>
+            <a href="#">gallery</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#"><i class="fa-solid fa-user"></i>login</a>
+        </div>
+        <div class="smenu">
+            <div class="dog"><i class="fa-solid fa-bars"></i>
+            <div class="ssmenu">
+                <a href="#">home</a>
+                <a href="#">collection</a>
+                <a href="#">gallery</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+                <a href="#"><i class="fa-solid fa-user"></i>login</a>
+            </div>
+        </div>
+        </div>
+    </div>
+        <div class="id">
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div></div><i class="fa-solid fa-user-plus"></i></div>
+        </div>
+    <div class="banner">
+        <div>
+            <h1>best collection....</h1>
+            <button type="submit"><b>explore more</b></button>
+        </div>
+
+    </div>
+    <div><br><br><br>
+        <h1><p>Featured</p>&nbsp;categories</h1>
+        <br>
+        <div class="space">
+        <div class="pic">
+        <div><img src="stone.jpg" width="100%"height="80%">This stone is precisous</div>
+        <div><img src="oliva.avif" width="100%"height="80%">This stone is precisous</div>
+        <div><img src="canada.jpg" width="100%"height="80%">This stone is precisous</div>
+        <div><img src="diamond.jfif" width="100%"height="80%">This stone is precisous</div>
+        <div><img src="oliva.avif" width="100%"height="80%">This stone is precisous</div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <h1><p>Featured</p>&nbsp;collection</h1>
+        <div style="text-align: center;font-size: 20px;">newly listed</div>
+    </div><br>
+    <div class="pic2">
+            <div><img src="pic1.webp" width="100%" height="70%" > This stone is precisous <br><button>buy now <i class="fa-solid fa-lock"></i></button></div>
+            <div><img src="black - Copy.jfif" width="100%" height="70%" >This stone is precisous <br><button>buy now <i class="fa-solid fa-lock"></i></button></div>
+            <div ><img src="white.jpeg" width="100%" height="70%">This stone is precisous <br><button>buy now <i class="fa-solid fa-lock"></i></button></div>
+        </div>
+    <div class="view">
+        <div class="view2">view more <i class="fa-solid fa-angles-right"></i></div> 
+    </div>
+   <div class="whatsapp">
+    <div class="whats">
+        <div><img src="whats.jfif"width="100%"height="100%"/></div>
+        <div class="contact">
+            <div class="us">contact us on whatsapp<i class="fa-brands fa-whatsapp"></i></div>
+            <div class="info">if u want to ask any question related to our goods and Delivery so you can contact us on whatsapp</div>
+            <button>whatsapp<i class="fa-brands fa-whatsapp"></i></button>
+        </div>
+    </div>
+   </div>
+   <div class="login">
+        <div class="login1">
+            <div class="login2">
+                <div class="send">send us a message<i class="fa-solid fa-envelope"></i></div>
+                <div class="query">Ask your any&nbsp;<p>Query</p>&nbsp;by sending us a Message</div>
+            </div>
+            <div class="login3">
+                <div class="name"><input type="text"placeholder="your name"  ></div>
+                <div class="email"><input type="text"placeholder="email"> </div>
+                <div class="text" > <textarea cols="83" rows="10" placeholder="your address"></textarea> </div>
+                <button>send</button>
+            </div>
+        </div>
+   </div>
+   
+</div>       
+</body>
+</html>
